@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Programming\\Vuejs\\NotesApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ACF08AF2-373F-7D25-6196-71D14A4377CD}|notesapp.client\\notesapp.client.esproj|d:\\programming\\vuejs\\notesapp\\notesapp.client\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACF08AF2-373F-7D25-6196-71D14A4377CD}|notesapp.client\\notesapp.client.esproj|solutionrelative:notesapp.client\\src\\app.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ACF08AF2-373F-7D25-6196-71D14A4377CD}|notesapp.client\\notesapp.client.esproj|d:\\programming\\vuejs\\notesapp\\notesapp.client\\src\\assets\\icons\\book.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{ACF08AF2-373F-7D25-6196-71D14A4377CD}|notesapp.client\\notesapp.client.esproj|solutionrelative:notesapp.client\\src\\assets\\icons\\book.vue||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Book.vue",
+              "DocumentMoniker": "D:\\Programming\\Vuejs\\NotesApp\\notesapp.client\\src\\assets\\icons\\Book.vue",
+              "RelativeDocumentMoniker": "notesapp.client\\src\\assets\\icons\\Book.vue",
+              "ToolTip": "D:\\Programming\\Vuejs\\NotesApp\\notesapp.client\\src\\assets\\icons\\Book.vue",
+              "RelativeToolTip": "notesapp.client\\src\\assets\\icons\\Book.vue",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-05-27T07:08:45.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.vue",
+              "DocumentMoniker": "D:\\Programming\\Vuejs\\NotesApp\\notesapp.client\\src\\App.vue",
+              "RelativeDocumentMoniker": "notesapp.client\\src\\App.vue",
+              "ToolTip": "D:\\Programming\\Vuejs\\NotesApp\\notesapp.client\\src\\App.vue",
+              "RelativeToolTip": "notesapp.client\\src\\App.vue",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003491|",
+              "WhenOpened": "2025-05-27T06:50:24.45Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

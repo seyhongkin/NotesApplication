@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "Ozg6DHqonZFx96XWlfO3VFttSI4a9TdQ1n87dJJrDAg=",
+  "Source": "NotesApp.Server",
+  "BasePath": "_content/NotesApp.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\Programming\\Vuejs\\NotesApp\\notesapp.client\\notesapp.client.esproj",
+      "Version": 2,
+      "Source": "notesapp.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
