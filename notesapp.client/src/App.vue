@@ -1,20 +1,18 @@
 <script setup lang="ts">
-  import Book from './assets/icons/Book.vue'
+import Header from "./components/Header.vue";
+import SearchForm from "./components/SearchForm.vue";
+import NotesList from "./components/NotesList.vue";
+import AddButton from "./components/AddButton.vue";
 </script>
 
 <template>
   <div class="max-w-4xl mx-auto px-4">
+    <Header username="seyhong" />
+    <SearchForm />
 
-    <header class="my-4">
-      <h1 class="font-bold text-xl">
-        <Book />
-        NoteApp
-      </h1>
-    </header>
-
+    <AddButton />
+    <NotesList />
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
