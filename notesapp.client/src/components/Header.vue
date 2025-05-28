@@ -1,9 +1,14 @@
 <script lang="ts" setup>
+import type { User } from "@/types";
 import Book from "../assets/icons/Book.vue";
 import Power from "../assets/icons/Power.vue";
 
 const props = defineProps<{
-  username: string;
+  user?: User;
+}>();
+
+const emit = defineEmits<{
+  onLogout: [];
 }>();
 </script>
 
@@ -14,12 +19,12 @@ const props = defineProps<{
       NoteApp
     </h1>
 
-    <div class="flex gap-2">
+    <div v-if="props.user" class="flex gap-2">
       <p class="italic">
-        Welcome, <span class="underline">{{ props.username }}</span>
+        Welcome, <span class="underline">{{ props.user.username }}</span>
       </p>
 
-      <div class="text-red-500 hover:text-red-700 cursor-pointer">
+      <div @click="emit('onLogout')" class="text-red-500 hover:text-red-700 cursor-pointer">
         <Power />
       </div>
     </div>
