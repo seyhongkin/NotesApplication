@@ -1,20 +1,25 @@
 <script lang="ts" setup>
 import { ref } from "vue";
-import Plus from "../assets/icons/Plus.vue";
+import Pencil from "../assets/icons/Pencil.vue";
 import Modal from "./Modal.vue";
+import type { Note } from "@/types";
+
+const props = defineProps<{
+  id: string;
+  note: Note;
+}>();
 
 const emit = defineEmits<{
-  saved: [title: string, content: string];
+  confirmUpdate: [id: string, title: string, content: string];
 }>();
 
 const isShowModal = ref(false);
 const error = ref("");
 
-const title = ref("");
-const content = ref("");
+const title = ref(props.note.title);
+const content = ref(props.note.content);
 
 function showModal() {
-  error.value = "";
   isShowModal.value = true;
 }
 
@@ -23,14 +28,8 @@ function closeModal() {
 }
 
 function handleSubmit() {
-  if (!title.value.trim()) {
-    error.value = "Please give this note a title.";
-    return;
-  }
+  emit("confirmUpdate", props.id, title.value, content.value);
 
-  emit("saved", title.value.trim(), content.value.trim());
-  title.value = "";
-  content.value = "";
   closeModal();
 }
 </script>
@@ -38,12 +37,12 @@ function handleSubmit() {
 <template>
   <button
     @click="showModal"
-    class="absolute right-4 bottom-4 z-[99] bg-gray-900 hover:bg-gray-700 text-white rounded-full p-3"
+    class="bg-gray-900 hover:bg-gray-700 text-white p-2 rounded-full cursor-pointer"
   >
-    <Plus />
+    <Pencil />
   </button>
 
-  <Modal title="Create note" :show="isShowModal" @submit="handleSubmit" @close="closeModal">
+  <Modal title="Update note" :show="isShowModal" @submit="handleSubmit" @close="closeModal">
     <div class="space-y-2">
       <div>
         <label for="title" class="block mb-2 text-sm font-medium text-gray-900"

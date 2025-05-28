@@ -1,5 +1,21 @@
 <script setup lang="ts">
 import SortButton from "../components/SortButton.vue";
+
+const emit = defineEmits<{
+  onSearch: [search: string];
+  onSort: [isDesc: boolean];
+}>();
+
+function handleSearch(e: Event) {
+  const target = e.target as HTMLInputElement;
+  const search = target.value;
+
+  emit("onSearch", search);
+}
+
+function handleSort(isDesc: boolean) {
+  emit("onSort", isDesc);
+}
 </script>
 
 <template>
@@ -23,6 +39,7 @@ import SortButton from "../components/SortButton.vue";
         </svg>
       </div>
       <input
+        @input="handleSearch"
         type="text"
         id="simple-search"
         class="bg-gray-50 border border-gray-300 outline-0 text-gray-900 text-sm rounded-lg focus:ring-orange-500 focus:border-orange-500 block w-full ps-10 p-2.5"
@@ -30,6 +47,6 @@ import SortButton from "../components/SortButton.vue";
         required
       />
     </div>
-    <SortButton />
+    <SortButton @change-sort="handleSort" />
   </form>
 </template>

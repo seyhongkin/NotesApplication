@@ -1,10 +1,15 @@
 <script lang="ts" setup>
 import { ref } from "vue";
 
+const emit = defineEmits<{
+  changeSort: [isDesc: boolean];
+}>();
+
 const isDesc = ref(true);
 
 function toggleDesc() {
   isDesc.value = !isDesc.value;
+  emit("changeSort", isDesc.value);
 }
 </script>
 
